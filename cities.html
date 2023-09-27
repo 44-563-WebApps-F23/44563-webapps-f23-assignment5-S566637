@@ -13,182 +13,194 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-light" style="font-family:'Courier New', Courier, monospace; font-size: larger; font-size: larger;" >
-    <a class="navbar-brand" href="cities.html">A Few Cities</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-    data-bs-target="#InsectNavbarContent" aria-controls="InsectNavbarContent" 
-    aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggle-icon"></span>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">A Few Cities</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse col-sm-2" id="new-navbar">
         <ul class="navbar-nav mr-auto">
-            
-            <li class="nav-item">
-                <a class="nav-link" href="basic.html">Basic</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="basic.html">Basic</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="advanced.html">Advanced</a>
+              <a class="nav-link" href="advanced.html">Advanced</a>
             </li>
         </ul>
     </div>
-</nav>
-    <h3>Visit cities with Seerapu Malaya Sugandhini</h3>
-
+  </nav>
+  <h1>Visit Cities with MalayaSugandhini</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">M</div>
+      <div class="col-sm-2">A</div>
+      <div class="col-sm-2">L</div>
+      <div class="col-sm-2">A</div>
+      <div class="col-sm-2">y</div>
+      <div class="col-sm-2">A</div>
+  </div>
+  <div class="row">
+    <div class="col-md">Massachusetts</div>
+    <div class="col-md">Alabama</div>
+    <div class="col-md">Louisville</div>
+    <div class="col-md">Arkansas</div>
+    <div class="col-md">Youngstown</div>
+    <div class="col-md">Austin</div>
+  </div>
+  <br>
+  <p>
+    If you choose col-sm, then the columns will become horizontal when the width is >= 768px. 
+    If you choose col-md, then the columns will become horizontal when the width is >= 992px.
+    Hence the row with class col-md will breaks first.
+  </p>
+  
+  <h2>Cities Images</h2>
     <div class="container">
-        <div class="row">
-      
-        <div class="col-sm-2">M</div>
-        <div class="col-sm-2">A</div>
-        <div class="col-sm-2">L</div>
-        <div class="col-sm-2">A</div>
-        <div class="col-sm-2">Y</div>
-        <div class="col-sm-2">A</div>
+      <h4>Responsive</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="Massachusetts.jpg" alt="Massachusetts" class="img-fluid" style ="width:300px; height:168px;">
         </div>
-      
-        <div class="row">
-      
-        <div class="col-md">Massachusetts</div>
-        <div class="col-md">Alabama</div>
-        <div class="col-md">Louisville</div>
-        <div class="col-md">Arkansas</div>
-        <div class="col-md">Youngstown</div>
-        <div class="col-md">Austin</div>
+        <div class="col-md-4">
+          <img src="Alabama.jpg" alt="Alabama" class="img-fluid" style ="width:300px; height:168px;">
         </div>
-      
+        <div class="col-md-4">
+          <img src="Louisville.jpg" alt="Louisville" class="img-fluid" style ="width:300px; height:168px;">
         </div>
-        <p>When the browser is gradually reduced, the row with city names breaks first because their larger divs (col-md) take up more space than the smaller letter divs (col-sm-2).
-          The larger divs cannot fit as the screen shrinks, but the smaller letter divs can.</p>
-        
-        <div class="container">
-        <img class="img-fluid" src="Massachusetts.jpg" alt="Massachusetts" height="400" width="400">
-        <img class="img-fluid" src="Alabama.jpg"  alt="Alabama"  height="400" width="400">
-        <img class="img-fluid" src="Louisville.jpg"  alt="Louisville"  height="400" width="400">
-        </div><br>
+      </div>
+    </div>
 
-        <div class="container">
-          <img class="img-thumbnail" src="Massachusetts.jpg" alt="Massachusetts.jpg" height="400" width="400">
-          <img class="img-thumbnail" src="Alabama.jpg"  alt="Alabama.jpg"  height="400" width="400">
-          <img class="img-thumbnail" src="Louisville.jpg" alt="Louisville.jpg" height="400" width="400">
-        </div><br><br>
+    <h2>Thumbnail Images</h2>
+     <div class="container">
+      <h4>img-thumbnail</h4>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="Massachusetts.jpg" alt="Massachusetts" class="img-thumbnail" style ="width:300px; height:168px;">
+        </div>
+        <div class="col-md-4">
+          <img src="Alabama.jpg" alt="Alabama" class="img-thumbnail" style ="width:300px; height:168px;">
+        </div>
+        <div class="col-md-4">
+          <img src="Louisville.jpg" alt="Louisville" class="img-thumbnail" style ="width:300px; height:168px;">
+        </div>
+      </div>
+     </div>
+     <br>
+<br>
 
-        <div class="container">
-        <caption style="color:black">Bootstrap table with headers 'Letter', 'City', 'River' and 'Tree'</caption><br>
-        <table class="table table-sucess table-stripped" style="text-align: center;">
-        
-        <thead class="table-primary">
-          <tr style="color:rgb(248, 8, 28)">
-              <th scope="col">Letter</th>
-              <th scope="col">City</th>
-              <th scope="col">River</th>
-              <th scope="col">Tree</th>
+    <div class="Container">
+      <h4>Table</h4>
+      <table class="table table-striped table-hover table-bordered">
+        <caption>Table containing Letters, Cities, Rivers and Trees.</caption>
+        <thead>
+          <tr class="table-primary">
+            <th scope="col">Letter</th>
+            <th scope="col">City</th>
+            <th scope="col">Rivers</th>
+            <th scope="col">Trees</th>
           </tr>
-       </thead>
-       <tbody class ="table-warning">
-        <tr class="table-danger">
-            <td>M</td>
+        </thead>
+        <tbody>
+          <tr class="table-secondary">
+            <th scope="row">M</th>
             <td>Massachusetts</td>
             <td>Miami River</td>
             <td>Mango</td>
-        </tr>
-        <tr class="table-light">
-            <td>A</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">A</th>
             <td>Alabama</td>
             <td>Apple River</td>
             <td>Apple</td>
-        </tr>
-        <tr class="table-success">
-            <td>L</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">L</th>
             <td>Louisville</td>
             <td>Lochsa River</td>
             <td>Leadwood</td>
-        </tr>
-        <tr class="table-info">
-            <td>A</td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">A</th>
             <td>Arkansas</td>
             <td>American River</td>
             <td>Aspen</td>
-        </tr>
-        <tr class="table-dark">
-            <td>Y</td>
+          </tr>
+          <tr class="table-info">
+            <th scope="row">Y</th>
             <td>Youngstown</td>
             <td>Yaak River</td>
             <td>Yellow Birch</td>
-        </tr>
-        <tr class="table-secondary">
-            <td>A</td>
+          </tr>
+          <tr class="table-light">
+            <th scope="row">A</th>
             <td>Austin</td>
             <td>Amazon River</td>
             <td>Araucaria</td>
-        </tr>
-        </tr>
-    </tbody>
-  </table>
-  </div>
-  <br>
-  <h4 style="text-align: center; color:red;">Buttons and Button Groups</h4><br>
-  <label>Buttons</label>
-  <br>
-  <button class="btn">M</button>
-  <button class="btn">A</button>
-  <button class="btn">L</button>
-  <button class="btn">A</button>
-  <button class="btn">Y</button>
-  <button class="btn">A</button>
-  <br>
-
-  <label>Button Groups</label><br>
-  <div>
-    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <div class="btn-group me-2" role="group" aria-lable="First group">
-        <button type="button" class="btn btn-success">G</button>
-        <button type="button" class="btn btn-success">U</button>
-        <button type="button" class="btn btn-success">R</button>
-      </div>
-
-      <div class="btn-group me-2" role="group" aria-label="Second group">
-        <button type="button" class="btn btn-warning">R</button>
-        <button type="button" class="btn btn-warning">A</button>
-      </div>
-
-      <div class="btn-group me-2" role="group" aria-label="Third group">
-        <button type="button" class="btn btn-danger">M</button>
+          </tr>         
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <div class="container">
+      <h4>Buttons</h4>
+      <button type="button" class="btn btn-primary">M</button>
+      <button type="button" class="btn btn-primary">A</button>
+      <button type="button" class="btn btn-primary">L</button>
+      <button type="button" class="btn btn-primary">A</button>
+      <button type="button" class="btn btn-primary">Y</button>
+      <button type="button" class="btn btn-primary">A</button>
+    </div>
+    <br>
+    <div class="container">
+      <h4>Button Groups</h4> 
+      <div class="btn-toolbar">
+        <div class="btn-group" role="Success" aria-label="First Group">
+          <button type="button" class="btn btn-success">M</button>
+          <button type="button" class="btn btn-success">A</button>
+          <button type="button" class="btn btn-success">L</button>
+        </div>
+        <div class="btn-group" role="Warning" aria-label="Second Group">
+          <button type="button" class="btn btn-warning">A</button>
+          <button type="button" class="btn btn-warning">Y</button>
+        </div>
+        <div class="btn-group" role="Danger" aria-label="Third Group">
+          <button type="button" class="btn btn-danger">A</button>
+        </div>
       </div>
     </div>
-  </div>
+    <br>
+    <div class="container">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown-Menu
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+          <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+        </ul>
+      </div>
+    </div>
   <br>
-<div class="dropdown" Style="position: relative; display: inline-block;">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-      Dropdown
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
-      <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
-  </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<div class="container">
-  <form action="">
+  <div class="container">
+    <h4>Form</h4>
+    <form>
       <div class="form-group">
-          <label for="Email" class="form-label">Email address :</label>
-          <input type="email" class="form-control" id="Email" placeholder="Enter Your Email Address"  
-          aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp"></small>
+      </div> 
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" class="form-control" id="city" placeholder="Enter your city">
       </div>
-      <div class="form-group">
-          <label for="City" class="form-label">City :</label>
-          <input type="text" class="form-control" id="CityInput" 
-          placeholder="Enter Your City">
-      </div><br>
       <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="Check">
-          <label class="form-check-label" for="Check">Sign up for newsletter?</label>
+        <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" id="newsletter"> Sign up for newsletter?
+        </label>
       </div>
-      <button class="btn btn-primary" type="submit">Submit</button>
-  </form>
-</div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 <br>
 <div class="row">
   <div class="card" style="width: 18rem;">
@@ -217,5 +229,6 @@
     </div>
   </div>
 <br>
+
 </body>
 </html>
