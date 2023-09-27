@@ -1,0 +1,16 @@
+<style>
+  /* CSS for responsiveness */
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .image-container img {
+    max-width: 100%; /* Make images scale with their container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some spacing between images */
+  }
+</style>
+
+
