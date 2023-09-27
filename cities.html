@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Assignment</title>
-  <h2>Visit cities with Malaya sugandhini</h2>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Web Apps Lab5</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -15,74 +13,208 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="row" >
+  <nav class="navbar navbar-expand-md navbar-light bg-light" style="font-family:'Courier New', Courier, monospace; font-size: larger; font-size: larger;" >
+    <a class="navbar-brand" href="cities.html">A Few Cities</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+    data-bs-target="#InsectNavbarContent" aria-controls="InsectNavbarContent" 
+    aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggle-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
             
-            <div  class="col-sm-2" >
-                M
-            </div>
-            <div  class="col-sm-2" >
-                A
-            </div>
-            <div  class="col-sm-2" >
-                L
-            </div>
-            <div  class="col-sm-2" >
-                A
-            </div>
-            <div  class="col-sm-2" >
-                Y
-            </div>
-            <div  class="col-sm-2" >
-                A
-            </div>
-        
+            <li class="nav-item">
+                <a class="nav-link" href="basic.html">Basic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="advanced.html">Advanced</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <h3>Visit cities with Santhosh Reddy Gurram</h3>
+
+    <div class="container">
+        <div class="row">
+      
+        <div class="col-sm-2">G</div>
+        <div class="col-sm-2">U</div>
+        <div class="col-sm-2">R</div>
+        <div class="col-sm-2">R</div>
+        <div class="col-sm-2">A</div>
+        <div class="col-sm-2">M</div>
         </div>
-           
-            <div class="row">
-                <div class="col-md">
-                   Massachusetts
-                </div>
-                <div class="col-md">
-                   Alabama
-                </div>
-                <div class="col-md">
-                   Louisville
-                </div>
-                <div class="col-md">
-                   Arkansas
-                </div>
-                <div class="col-md">
-                   Youngstown
-                </div>
-                <div class="col-md">
-                   Austin
-                </div>
-          </div>
-    
-
+      
+        <div class="row">
+      
+        <div class="col-md">Goa</div>
+        <div class="col-md">Udaipur</div>
+        <div class="col-md">Ranchi</div>
+        <div class="col-md">Rajkot</div>
+        <div class="col-md">Agra</div>
+        <div class="col-md">Mysore</div>
+        </div>
+      
+        </div>
+        <p>When the browser is gradually reduced, the row with city names breaks first because their larger divs (col-md) take up more space than the smaller letter divs (col-sm-2).
+          The larger divs cannot fit as the screen shrinks, but the smaller letter divs can.</p>
         
-        
-</div>
-
-      <p> The letters row breaks first when reducing the browser window size. This happens because...
-      </p>
-      <div class="container">
-        <h1>Welcome to My City Showcase</h1>
-        <p>Explore some amazing cities I've selected below:</p><br>
-
-        <img class="img-fluid" src="Massachusetts.jpg" alt="Agra" height="400" width="400">
-        <img class="img-fluid" src="Alabama.jpg"  alt="Goa"  height="400" width="400">
-        <img class="img-fluid" src="Louisville.jpg"  alt="Ranchi"  height="400" width="400">
+        <div class="container">
+        <img class="img-fluid" src="Agra.jpg" alt="Agra" height="400" width="400">
+        <img class="img-fluid" src="Goa.jpg"  alt="Goa"  height="400" width="400">
+        <img class="img-fluid" src="Ranchi.jpg"  alt="Ranchi"  height="400" width="400">
         </div><br>
 
         <div class="container">
-            <img class="img-thumbnail" src="Massachusetts.jpg" alt="Agra.jpg" height="400" width="400">
-            <img class="img-thumbnail" src="Alabama.jpg"  alt="Goa.jpg"  height="400" width="400">
-            <img class="img-thumbnail" src="Louisville.jpg" alt="Ranchi.jpg" height="400" width="400">
-          </div><br><br>
-     
+          <img class="img-thumbnail" src="Agra.jpg" alt="Agra.jpg" height="400" width="400">
+          <img class="img-thumbnail" src="Goa.jpg"  alt="Goa.jpg"  height="400" width="400">
+          <img class="img-thumbnail" src="Ranchi.jpg" alt="Ranchi.jpg" height="400" width="400">
+        </div><br><br>
 
+        <div class="container">
+        <caption style="color:black">Bootstrap table with headers 'Letter', 'City', 'River' and 'Tree'</caption><br>
+        <table class="table table-sucess table-stripped" style="text-align: center;">
+        
+        <thead class="table-primary">
+          <tr style="color:rgb(248, 8, 28)">
+              <th scope="col">Letter</th>
+              <th scope="col">City</th>
+              <th scope="col">River</th>
+              <th scope="col">Tree</th>
+          </tr>
+       </thead>
+       <tbody class ="table-warning">
+        <tr class="table-danger">
+            <td>G</td>
+            <td>Goa</td>
+            <td>Ganges</td>
+            <td>Ginkgo Biloba</td>
+        </tr>
+        <tr class="table-light">
+            <td>U</td>
+            <td>Udaipur</td>
+            <td>Ucayali River</td>
+            <td>Umbrella Pine</td>
+        </tr>
+        <tr class="table-success">
+            <td>R</td>
+            <td>Ranchi</td>
+            <td>Rhine River</td>
+            <td>RoseWood</td>
+        </tr>
+        <tr class="table-info">
+            <td>R</td>
+            <td>Rajkot</td>
+            <td>Rhone RIver</td>
+            <td>Redwood</td>
+        </tr>
+        <tr class="table-secondary">
+            <td>A</td>
+            <td>Agra</td>
+            <td>Amazon River</td>
+            <td>Araucaria</td>
+        </tr>
+        <tr class="table-dark">
+            <td>M</td>
+            <td>Mysore</td>
+            <td>Mississippi River</td>
+            <td>Maple Tree</td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+  <br>
+  <h4 style="text-align: center; color:red;">Buttons and Button Groups</h4><br>
+  <label>Buttons</label>
+  <br>
+  <button class="btn">G</button>
+  <button class="btn">U</button>
+  <button class="btn">R</button>
+  <button class="btn">R</button>
+  <button class="btn">A</button>
+  <button class="btn">M</button>
+  <br>
 
+  <label>Button Groups</label><br>
+  <div>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div class="btn-group me-2" role="group" aria-lable="First group">
+        <button type="button" class="btn btn-success">G</button>
+        <button type="button" class="btn btn-success">U</button>
+        <button type="button" class="btn btn-success">R</button>
+      </div>
+
+      <div class="btn-group me-2" role="group" aria-label="Second group">
+        <button type="button" class="btn btn-warning">R</button>
+        <button type="button" class="btn btn-warning">A</button>
+      </div>
+
+      <div class="btn-group me-2" role="group" aria-label="Third group">
+        <button type="button" class="btn btn-danger">M</button>
+      </div>
+    </div>
+  </div>
+  <br>
+<div class="dropdown" Style="position: relative; display: inline-block;">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+      <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <form action="">
+      <div class="form-group">
+          <label for="Email" class="form-label">Email address :</label>
+          <input type="email" class="form-control" id="Email" placeholder="Enter Your Email Address"  
+          aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="form-group">
+          <label for="City" class="form-label">City :</label>
+          <input type="text" class="form-control" id="CityInput" 
+          placeholder="Enter Your City">
+      </div><br>
+      <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="Check">
+          <label class="form-check-label" for="Check">Sign up for newsletter?</label>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
+</div>
+<br>
+  <div class="row">
+    <div class="card" style="width: 18rem;">
+      <img src="Goa.jpg" class="card-img-top" alt="AfricanViolet">
+      <div class="card-body">
+        <h5 class="card-title">Goa</h5>
+        <p class="card-text">Goa (Konkani: [goa] i) is a state on the southwestern coast of India within the Konkan region, geographically separated from the Deccan highlands by the Western Ghats</p>
+        <a href="https://en.wikipedia.org/wiki/Goa" class="btn btn-primary">About</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="Agra.jpg" class="card-img-top" alt="grapevines">
+      <div class="card-body">
+        <h5 class="card-title">Agra</h5>
+        <p class="card-text">Agra is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh, about 230 kilometres (140 mi) south-east of the national capital Delhi and 330 km west of the state capital Lucknow.</p>
+        <a href="https://en.wikipedia.org/wiki/Agra" class="btn btn-primary">About</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="Ranchi.jpg" class="card-img-top" alt="NorfolkIslandPine">
+      <div class="card-body">
+        <h5 class="card-title">Ranchi</h5>
+        <p class="card-text">Ranchi is the capital of the Indian state of Jharkhand.[6] Ranchi was the centre of the Jharkhand movement,[7] which called for a separate state for the tribal regions of South Bihar, northern Odisha, western West Bengal and the eastern area of what is present-day Chhattisgarh.</p>
+        <a href="https://en.wikipedia.org/wiki/Ranc" class="btn btn-primary">About</a>
+      </div>
+    </div>
+  </div>
+<br>
 </body>
 </html>
